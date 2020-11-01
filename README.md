@@ -1,3 +1,5 @@
 # php_db_migration
 php_apiでdbをAccessからMySQLへ移行。
 モジュール詳細情報はAccessへの接続：ODBC、MySQLへの接続：MySQLi。
+plan1はtable01の移行コードで、関数を利用しデータを行ごとに処理を行った。（必要があるデータのみエンコードをかける）。
+plan2はtable04の移行コードで、見た目の方がシンプルですが、すべてのデータをエンコード処理を行った。
