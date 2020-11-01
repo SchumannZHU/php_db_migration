@@ -8,10 +8,6 @@ function read_data_from_access ($startID, $step, $cn) {
 		$po = odbc_fetch_array($rs);
 		if (!$po) break;
 		$postr = "";
-		/*$postrx = "1093640, '1641069',1,'','2018-04-01 02:47:09',
-				'210.146.71.126',0,1,NULL,0";*/
-		/*$po["Access_ID"], $po["ID"], $po["class"],$po["name"], $po["logintime"], 
-		$po["IP"], $po["flg"],$po["manager"]);*/
 		foreach ($po as $key => $value) {
 			$value = mb_convert_encoding($value, "UTF-8", "sjis-win");
 			if (in_array($key, $strkeys)) {
