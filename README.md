@@ -1,2 +1,4 @@
 # php_db_migration
 php_apiでdbをAccessからMySQLへ移行
+Accessへの接続：ODBC
+MySQLへの接続：MySQLi
