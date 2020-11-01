@@ -11,7 +11,7 @@ function read_data_from_access ($startID, $step, $cn) {
 		foreach ($po as $key => $value) {
 			$value = mb_convert_encoding($value, "UTF-8", "sjis-win");
 			if (in_array($key, $strkeys)) {
-        //COMMAND: $postr is a data set
+        			//COMMAND: $postr is a data set
 				$postr .= "'".$value."'";
 			} elseif( $value === '' ) {			
 				$postr .= "NULL";
